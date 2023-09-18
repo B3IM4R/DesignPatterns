@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>Patrones de Diseño</title>
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/dracula.css">
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section>
+						<h2>Patrones de Diseño</h2>
+						<img src="https://refactoring.guru/images/patterns/content/index/patterns-i3.png?id=8acb54bc13ec54391a2a450330f9106a">
+						<small><b>(Design Patterns)</b></small>
+						<p>Soluciones generales a distintos problemas comunes que se presentan en el diseño de software</p>
+					</section>
+				</section>
+				<section data-transition="slide" data-background="#17b2c3" data-background-transition="zoom">
+					<section data-transition="slide" data-background-transition="zoom">
+						<h2>Patrones Creacionales</h2>
+						<img src="https://refactoring.guru/images/patterns/content/builder/builder-es.png?id=6a685e06fc69071a93b7282298a55837" width="500">
+						<p>Crean nuevos objetos que incrementan la flexibilidad y reutilización del código existente</p>
+					</section>
+					<section>
+						<h3 >Factory Method</h3>
+						<small><b>(Método Fábrica)</b></small>
+						<p>Proporciona una interfaz para crear objetos en una superclase, mientras permite a las subclases alterar el tipo de objetos que se crearán</p>
+						<img src="https://refactoring.guru/images/patterns/content/factory-method/factory-method-en-3x.png" width="350">
+					</section>
+					<section>
+						<h3>Abstract Factory</h3>
+						<small><b>(Fábrica abstracta)</b></small>
+						<p>Permite producir familias de objetos relacionados sin especificar sus clases concretas</p>
+						<img src="https://refactoring.guru/images/patterns/content/abstract-factory/abstract-factory-en-3x.png" width="350">
+					</section>
+					<section>
+						<h3>Builder</h3>
+						<small><b>(Constructor)</b></small>
+						<p>Permite producir distintos tipos y representaciones de un objeto empleando el mismo código de construcción</p>
+						<img src="https://refactoring.guru/images/patterns/content/builder/builder-es.png?id=6a685e06fc69071a93b7282298a55837" width="350">
+					</section>
+					<section>
+						<h3>Prototype</h3>
+						<small><b>(Prototipo)</b></small>
+						<p>Permite copiar objetos existentes sin que el código dependa de sus clases</p>
+						<img src="https://refactoring.guru/images/patterns/content/prototype/prototype.png?id=e912b1ada20bbf7b2ffc09e93b9fab20" width="350">
+					</section>
+					<section>
+						<h3>Singleton</h3>
+						<small><b>(Instancia Única)</b></small>
+						<p>Asegura que una clase tenga una única instancia y a la vez que proporciona un punto de acceso global a dicha instancia</p>
+						<img src="https://refactoring.guru/images/patterns/content/singleton/singleton-comic-1-es.png?id=cc859f28938dcdbd30d5149a9d916060" width="390">
+					</section>
+				</section>
+				<section data-transition="slide" data-background="#282A36" data-background-transition="zoom">
+					<section>
+						<h2>Patrones Estructurales</h2>
+						<img src="https://refactoring.guru/images/patterns/languages/swift.png?id=c80166943c705fd91fa0008d7d5a9ca6" width="500">
+						<p>Facilitan la acción de ensamblar objetos y clases dentro de clases estructurales más grandes sin perder la eficiencia y flexibilidad</p>
+					</section>
+					<section>
+						<h3>Adapter</h3>
+						<small><b>(Adaptador)</b></small>
+						<p>Permite la colaboración entre objetos con interfaces incompatibles. El adaptador implementa la interfaz de un objeto y envuelve el otro</p>
+						<img src="https://refactoring.guru/images/patterns/content/adapter/adapter-es.png?id=5b877b3bdab93ef57848e3d6426064f1" width="350">
+					</section>
+					<section>
+						<h3>Bridge</h3>
+						<small><b>(Puente)</b></small>
+						<p>Divide una clase o un grupo de clases relacionadas en dos jerarquías separadas, <b>abstracción</b> e <b>implementación</b> que pueden desarrollarse independientemente la una de la otra</p>
+						<img src="https://refactoring.guru/images/patterns/diagrams/bridge/problem-es.png?id=15670d9922988494a1fa39591a205297" width="320">
+					</section>
+					<section>
+						<h3>Composite</h3>
+						<small><b>(Objeto Compuesto)</b></small>
+						<p>Compone objetos en estructuras de árbol y trabaja con esas estructuras como si fueran objetos individuales</p>
+						<img src="https://refactoring.guru/images/patterns/diagrams/composite/problem-es.png?id=3b02eaf4b7744eb05b261ac48d3d3e4a" width="280">
+					</section>
+					<section>
+						<h3>Decorator</h3>
+						<small><b>(Decorador)</b></small>
+						<p>Añade funcionalidades a objetos colocando estos objetos dentro de objetos encapsuladores especiales que contienen estas funcionalidades</p>
+						<img src="https://refactoring.guru/images/patterns/content/decorator/decorator-comic-1.png?id=80d95baacbfb91f5bcdbdc7814b0c64d" width="350">
+					</section>
+					<section>
+						<h3>Facade</h3>
+						<small><b>(Fachada)</b></small>
+						<p>Proporciona una interfaz simplificada a una biblioteca, un framework o cualquier otro grupo complejo de clases</p>
+						<img src="https://refactoring.guru/images/patterns/diagrams/facade/live-example-es.png?id=ff6a4ba4b2ee5f00e3a721aba0481a4a" width="350">
+					</section>
+				</section>
+				<section data-transition="slide" data-background="#17b2c3" data-background-transition="zoom">
+					<section>
+						<h2>Patrones de Comportamiento</h2>
+						<img src="https://refactoring.guru/images/patterns/content/index/patterns-i5.png?id=6f49fee3f60a379d9a414fd5a69bfd56" width="300">
+						<p>Buscan una comunicación efectiva y asignan las responsabilidades entre objetos</p>
+					</section>
+					<section>
+						<h3>Chain of Responsibility</h3>
+						<small><b>(Cadena de responsabilidad)</b></small>
+						<p>Permite pasar solicitudes a lo largo de una cadena de manejadores, cada manejador decide si la procesa o si la pasa al siguiente manejador de la cadena</p>
+						<img src="https://refactoring.guru/images/patterns/content/chain-of-responsibility/chain-of-responsibility.png?id=56c10d0dc712546cc283cfb3fb463458" width="350">
+					</section>
+					<section>
+						<h3>Command</h3>
+						<small><b>(Comando)</b></small>
+						<p>Convierte una solicitud en un objeto independiente que contiene toda la información sobre la solicitud</p>
+						<img src="https://refactoring.guru/images/patterns/content/command/command-es.png?id=aa52c5ce63cbff0adf7dfcc5909f7eb4" width="350">
+					</section>
+					<section>
+						<h3>Iterator</h3>
+						<small><b>(Iterador)</b></small>
+						<p>Recorre elementos de una colección sin exponer su representación subyacente (lista, pila, árbol, etc.)</p>
+						<img src="https://refactoring.guru/images/patterns/content/iterator/iterator-comic-1-es.png?id=0ceb64477a16210f039bc8c9650029c3" width="400">
+					</section>
+					<section>
+						<h3>Mediator</h3>
+						<small><b>(Mediador)</b></small>
+						<p>Reduce las dependencias caóticas entre objetos y restringe las comunicaciones directas entre los objetos, forzándolos a colaborar únicamente a través de un objeto mediador</p>
+						<img src="https://refactoring.guru/images/patterns/content/mediator/mediator.png?id=0264bd857a231b6ea2d0c537c092e698" width="350">
+					</section>
+					<section>
+						<h3>Memento</h3>
+						<small><b>(Recuerdo)</b></small>
+						<p>Permite guardar y restaurar el estado previo de un objeto sin revelar los detalles de su implementación</p>
+						<img src="https://refactoring.guru/images/patterns/content/memento/memento-es.png?id=425d7fafd404116e99e93c3d8a04ec89" width="350">
+					</section>
+				</section>
+			</div>
+		</div>
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
